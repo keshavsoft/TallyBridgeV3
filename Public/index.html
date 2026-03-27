@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #hedgesBtn {
+            background: #2196F3;
+            color: white;
+        }
+
+        #stockItemsBtn {
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="ledgesBtn">📊 Ledges</button>
+        <button id="stockItemsBtn">📦 Stock Items</button>
+    </div>
+
+  <script type="module" src="./Index/start.js"></script>
+</body>
+
+</html>
