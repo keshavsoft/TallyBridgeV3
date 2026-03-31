@@ -1,0 +1,18 @@
+import fs from "fs";
+import { startFunc as readFromTally } from "./readFromTally.js";
+
+const StartFunc = async () => {
+    const dataFromTally = await readFromTally();
+
+    const LocalNewArray = dataFromTally.data.collection.map(element => {
+        return {
+            LedgerName: element.metadata.name,
+            LedgerParentName: element.parent.value,
+            LedgerType: element.metadata.type
+        }
+    });
+
+    fs.writeFileSync("./Data/asArray.json", JSON.stringify(LocalNewArray));
+};
+
+export { StartFunc };
