@@ -1,7 +1,6 @@
 import express from 'express';
 import http from 'http';
 import { router as routerFromApi } from "./Api/routes.js";
-import { router as routerFromFromData } from "./FromData/routes.js";
 
 const app = express();
 const server = http.createServer(app);
@@ -10,7 +9,6 @@ var port = normalizePort(process.env.PORT || 3000);
 
 app.use(express.static('Public'));
 app.use('/Api', routerFromApi);
-app.use('/FromData', routerFromFromData);
 
 function normalizePort(val) {
     var port = parseInt(val, 10);
