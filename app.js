@@ -1,3 +1,4 @@
+import { exec } from "child_process";
 import express from 'express';
 import http from 'http';
 import { router as routerFromApi } from "./Api/routes.js";
@@ -27,4 +28,5 @@ function normalizePort(val) {
 server.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
     console.log(`Open here http://localhost:${port}`);
+    exec("start http://localhost:3000");
 });

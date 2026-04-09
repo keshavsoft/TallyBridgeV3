@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@yao-pkg/pkg": "^6.14.2",
     "body-parser": "^2.2.0",
     "express": "^5.1.0"
   }
