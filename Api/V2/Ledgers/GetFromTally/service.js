@@ -13,7 +13,7 @@ const StartFunc = async () => {
         }
     });
 
-    fs.writeFileSync(dataPath, JSON.stringify(LocalNewArray));
+    return LocalNewArray;
 };
 
 export { StartFunc };
